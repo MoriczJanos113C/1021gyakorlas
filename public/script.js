@@ -4,7 +4,7 @@ document.getElementById('cipok').innerHTML = feltolt();
 async function feltolt(){
     const valasz = await fetch("/cipok");
     const cipoim = await valasz.json();
-
+console.log("megy");
     let cipo2HTML ="";
     for(egyCipo of cipoim){
             cipo2HTML += '<div class="card" style="width: 240;">';
